@@ -1,109 +1,127 @@
 <?php
-<?php
+
 
 $items = [
     [
         'image' => 'images/pastor-alemao.jpg',
-        'name'  => 'Pastor-alemão',
-        'color' => 'Amarelo e Preto',
-        'genre' => 'Masculino'
+        'name'  => 'pastor-alemão',
+        'color' => 'amarelo e preto',
+        'genre' => 'masculino',
+        'type'  => 'cachorro'
     ],
     [
         'image' => 'images/labrador.jpg',
-        'name'  => 'Labrador-retriever',
-        'color' => 'Branco',
-        'genre' => 'Masculino'
+        'name'  => 'labrador-retriever',
+        'color' => 'branco',
+        'genre' => 'masculino',
+        'type'  => 'cachorro'
     ],
     [
         'image' => 'images/zwergspitz.jpg',
-        'name'  => 'Zwergspitz',
-        'color' => 'Amarelo',
-        'genre' => 'Feminino'
+        'name'  => 'zwergspitz',
+        'color' => 'amarelo',
+        'genre' => 'feminino',
+        'type'  => 'cachorro'
     ],
     [
         'image' => 'images/husky.jpg',
-        'name'  => 'Husky Siberiano',
-        'color' => 'Branco e Preto',
-        'genre' => 'Masculino'
+        'name'  => 'husky siberiano',
+        'color' => 'branco e preto',
+        'genre' => 'masculino',
+        'type'  => 'cachorro'
     ],
     [
         'image' => 'images/golden.jpg',
-        'name'  => 'Golden Retriever',
-        'color' => 'Amarelo',
-        'genre' => 'Masculino'
+        'name'  => 'golden retriever',
+        'color' => 'amarelo',
+        'genre' => 'masculino',
+        'type'  => 'cachorro'
     ],
     [
         'image' => 'images/poodle.jpg',
-        'name'  => 'Poodle',
-        'color' => 'Branco',
-        'genre' => 'Feminino'
+        'name'  => 'poodle',
+        'color' => 'branco',
+        'genre' => 'feminino',
+        'type'  => 'cachorro'
     ],
     [
         'image' => 'images/bulldog.jpg',
-        'name'  => 'Bulldog',
-        'color' => 'Branco e Amarelo',
-        'genre' => 'Masculino'
+        'name'  => 'bulldog',
+        'color' => 'branco e amarelo',
+        'genre' => 'masculino',
+        'type'  => 'cachorro'
     ],
     [
         'image' => 'images/persa.jpg',
-        'name'  => 'Persa',
-        'color' => 'Amarelo',
-        'genre' => 'Masculino'
+        'name'  => 'persa',
+        'color' => 'amarelo',
+        'genre' => 'masculino',
+        'type'  => 'gato'
     ],
     [
         'image' => 'images/mainecoon.jpg',
-        'name'  => 'Maine Coon',
-        'color' => 'Preto e Branco',
-        'genre' => 'Masculino'
+        'name'  => 'maine coon',
+        'color' => 'preto e branco',
+        'genre' => 'masculino',
+        'type'  => 'gato'
     ],
     [
         'image' => 'images/bengal.jpg',
-        'name'  => 'Bengal',
-        'color' => 'Branco, Preto e Amarelo',
-        'genre' => 'Feminino'
+        'name'  => 'bengal',
+        'color' => 'branco, preto e amarelo',
+        'genre' => 'feminino',
+        'type'  => 'gato'
     ],
     [
         'image' => 'images/siames.jpg',
-        'name'  => 'Siamês',
-        'color' => 'Amarelo e Preto',
-        'genre' => 'Masculino'
+        'name'  => 'siamês',
+        'color' => 'amarelo e preto',
+        'genre' => 'masculino',
+        'type'  => 'gato'
     ],
     [
         'image' => 'images/sphynx.jpg',
-        'name'  => 'Sphynx',
-        'color' => 'Branco',
-        'genre' => 'Masculino'
+        'name'  => 'sphynx',
+        'color' => 'branco',
+        'genre' => 'masculino',
+        'type'  => 'gato'
     ],
     [
         'image' => 'images/neon.jpg',
-        'name'  => 'Tetra Neon',
-        'color' => 'Vermelho e Azul',
-        'genre' => 'Masculino'
+        'name'  => 'tetra neon',
+        'color' => 'vermelho e azul',
+        'genre' => 'masculino',
+        'type'  => 'peixe'
     ],
     [
         'image' => 'images/matogrosso.jpg',
-        'name'  => 'Mato Grosso',
-        'color' => 'Laranja',
-        'genre' => 'Masculino'
+        'name'  => 'mato grosso',
+        'color' => 'laranja',
+        'genre' => 'masculino',
+        'type'  => 'peixe'
     ],
     [
         'image' => 'images/limpavidro.jpg',
-        'name'  => 'Limpa Vidro',
-        'color' => 'Verde e Branco',
-        'genre' => 'Masculino'
+        'name'  => 'limpa vidro',
+        'color' => 'verde e branco',
+        'genre' => 'masculino',
+        'type'  => 'peixe'
     ],
     [
         'image' => 'images/tanictis.jpg',
-        'name'  => 'Tanictis',
-        'color' => 'Vermelho',
-        'genre' => 'Masculino'
+        'name'  => 'tanictis',
+        'color' => 'vermelho',
+        'genre' => 'masculino',
+        'type'  => 'peixe'
     ],
     [
         'image' => 'images/acara.jpg',
-        'name'  => 'Acará Bandeira',
-        'color' => 'Preto',
-        'genre' => 'Masculino'
+        'name'  => 'acará bandeira',
+        'color' => 'preto',
+        'genre' => 'masculino',
+        'type'  => 'peixe'
     ]
 ];
+
 
 ?>
