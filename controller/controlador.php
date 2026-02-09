@@ -1,5 +1,7 @@
 <?php 
 include "./data/animals.php";
+include "./model/models.php";
+
 $active = [
     "main" => "",
     "cachorros" => "",
@@ -12,8 +14,8 @@ function mainpage() {
     $active ["main"] = "active";
     $banner = "./images/allanimals.jpg";
     $title = "Todo os animais";
-    $content = $items;
-
+    $content = pegartodos($items);
+         
     include "./include/layout.php";
 }
 function gatospage() {
@@ -21,9 +23,10 @@ function gatospage() {
     $active ["gatos"] = "active";
     $banner = "./images/banner_cat.jpg";
     $title = "gatos";
-    $content = array_filter($items, function($animal){
-        return $animal['type'] == "gato";
-    });
+    $lista = pegartodos($items);
+    $content = pegartipo("gato",$lista);
+
+   
 
     include "./include/layout.php";
 }
@@ -32,9 +35,8 @@ function cachorrospage() {
     $active ["cachorros"] = "active";
     $banner = "./images/banner_dog.jpg";
     $title = "cachorros";
-    $content = array_filter($items, function($animal){
-        return $animal['type'] == "cachorro";
-    });
+    $lista = pegartodos($items);
+    $content = pegartipo("cachorro",$lista);
 
     include "./include/layout.php";
 }
@@ -43,18 +45,18 @@ function peixespage() {
     $active ["paixes"] = "active";
     $banner = "./images/banner_fish.jpg";
     $title = "peixes";
-    $content =array_filter($items, function($animal){
-        return $animal['type'] == "peixe";
-    });
+    $lista = pegartodos($items);
+    $content = pegartipo("paixe",$lista);
 
     include "./include/layout.php";
 }
 function pesquisapage() {
     global  $items;
     $nome = $_GET['nome'] ?? "";
-    $content =array_filter($items, function($animal) USE($nome){
-        return $animal['name'] == $nome;
-    });
+    $lista = pegartodos($items);
+    $content = pegarpelonome($items , $lista);
+
+
 
     include "./include/layout.php";
 }
